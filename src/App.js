@@ -26,6 +26,8 @@ import { CustomerList } from "./components/CustomerList";
 import { CustomerRegistration } from "./components/CustomerRegistration"
 import { CustomerProfile } from "./components/CustomerProfile";
 import { CustomerProfileUpdate } from "./components/CustomerUpdate";
+import { ProjectList } from "./components/ProjectList";
+import { ProjectUpsert } from "./components/ProjectUpsert";
 function App() {
   const history = useHistory();
   const state = useSelector((state) => state);
@@ -42,6 +44,7 @@ function App() {
   return (
     <>
       {/* {authSuccessFromStorage === "1" } */}
+
       <Route exact path="/staff-add" component={StaffAdd} />
       <Route exact path="/staff-list" component={StaffList} />
       <Route exact path="/staff-profile-update" component={StaffProfileUpdate} />
@@ -61,8 +64,9 @@ function App() {
       
       <Route exact path="/customer-profile" component={CustomerProfile} />
       <Route exact path="/customer-update" component={CustomerProfileUpdate} />
-
-
+      <Route exact path="/project-list" component={ProjectList} />
+      <Route exact path="/project-upsert" component={ProjectUpsert} />
+      
       </>
   );
 }

@@ -11,6 +11,7 @@ import { StaffReducer} from "./StaffReducer";
 import { CustomerReducer } from "./CustomerReducer";
 import { CustomerProfileReducer } from "./CustomerProfileReducer";
 import { CustomerLoginReducer} from "./CustomerLoginReducer";
+import { ProjectReducer } from "./ProjectReducer";
 
 
   const rootReducer = combineReducers({
@@ -22,6 +23,7 @@ import { CustomerLoginReducer} from "./CustomerLoginReducer";
     customerlogin: CustomerLoginReducer,
     customer: CustomerReducer,
     customerProfile: CustomerProfileReducer,
+    project: ProjectReducer,
   });
   
   const store = createStore(rootReducer, applyMiddleware(thunk));
