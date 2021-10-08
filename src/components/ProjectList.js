@@ -72,11 +72,16 @@ export const ProjectList = () => {
         <tbody>
           {state.project.projectList.map((item, index) => (
             <tr key={index}>
-              <th scope="row">
+              <th scope="row" style={{
+                  fontSize:"21px", fontFamily:"initial"}}>
                 <center>{item.projectId}</center>
               </th>
-              <td>{item.projectName}</td>
-              <td>{item.projectDescription}</td>
+              <td style={{
+                  fontSize:"23px", fontFamily:"initial"}}>
+                {item.projectName}
+                </td>
+              <td style={{
+                  fontSize:"23px", fontFamily:"initial"}}>{item.projectDescription}</td>
               <td>
                 <center>
                   <Button

@@ -110,8 +110,12 @@ export const ProjectUpsert = () => {
           </div>
         </center>
 
-        {state.project.progress && (<center>
-          <div className="mx-4 alert alert-success w-75">Operation Success</div></center>
+        {state.project.progress && (
+          <center>
+            <div className="mx-4 alert alert-success w-75">
+              Operation Success
+            </div>
+          </center>
         )}
         <div className="container alert alert-warning w-75">
           <center>
@@ -161,7 +165,7 @@ export const ProjectUpsert = () => {
                   }}
                   placeholder="Enter Project Description"
                   minLength="10"
-                  maxLength="100"
+                  maxLength="300"
                   required
                 />
               </div>
